@@ -27,7 +27,7 @@ class FragmentPregunta4 : Fragment() {
         val view = inflater.inflate(R.layout.fragment_pregunta4, container, false)
 
         rvUsers = view.findViewById(R.id.rvUsers)
-        rvUsers.layoutManager = LinearLayoutManager(context)
+        rvUsers.layoutManager = LinearLayoutManager(requireContext())
 
         getUsersData()
 
@@ -35,7 +35,7 @@ class FragmentPregunta4 : Fragment() {
     }
 
     private fun getUsersData() {
-        RetrofitClient.ApiService.getUsers().enqueue(object : Callback<UserResponse> {
+        RetrofitClient.apiService.getUsers().enqueue(object : Callback<UserResponse> {
             override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
                 if (response.isSuccessful) {
                     val userList = response.body()?.users ?: emptyList()
