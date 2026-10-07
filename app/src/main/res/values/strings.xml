@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">AppGrupo7</string>
+    <string name="textusuario">Usuario</string>
+    <string name="textpassword">Contraseña</string>
+    <string name="textlogin">Ingresar</string>
     <string name="textconsumo">Ingrese el consumo energético (kWh)</string>
     <string name="textCalcular">Calcular</string>
 </resources>
