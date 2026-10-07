@@ -3,6 +3,6 @@
     <string name="textusuario">Usuario</string>
     <string name="textpassword">Contraseña</string>
     <string name="textlogin">Ingresar</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textconsumo">Ingrese el consumo energético (kWh)</string>
+    <string name="textCalcular">Calcular</string>
 </resources>
