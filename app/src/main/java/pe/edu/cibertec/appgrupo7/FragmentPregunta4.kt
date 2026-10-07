@@ -27,7 +27,7 @@ class FragmentPregunta4 : Fragment() {
         val view = inflater.inflate(R.layout.fragment_pregunta4, container, false)
 
         rvUsers = view.findViewById(R.id.rvUsers)
-        rvUsers.layoutManager = LinearLayoutManager(context)
+        rvUsers.layoutManager = LinearLayoutManager(requireContext())
 
         getUsersData()
 

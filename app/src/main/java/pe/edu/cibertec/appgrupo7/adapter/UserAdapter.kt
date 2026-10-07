@@ -5,9 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import pe.edu.cibertec.appgrupo7.response.User
+import pe.edu.cibertec.appgrupo7.model.Usuario
 
-class UserAdapter(private val users: List<User>) :
+class UserAdapter(private val users: List<Usuario>) :
     RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
     class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
