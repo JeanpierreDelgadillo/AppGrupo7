@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppGrupo7</string>
+    <string name="textconsumo">Ingrese el consumo energético (kWh)</string>
+    <string name="textCalcular">Calcular</string>
 </resources>
