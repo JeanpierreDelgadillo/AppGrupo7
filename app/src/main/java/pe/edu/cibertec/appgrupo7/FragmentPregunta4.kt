@@ -35,7 +35,7 @@ class FragmentPregunta4 : Fragment() {
     }
 
     private fun getUsersData() {
-        RetrofitClient.ApiService.getUsers().enqueue(object : Callback<UserResponse> {
+        RetrofitClient.apiService.getUsers().enqueue(object : Callback<UserResponse> {
             override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
                 if (response.isSuccessful) {
                     val userList = response.body()?.users ?: emptyList()
